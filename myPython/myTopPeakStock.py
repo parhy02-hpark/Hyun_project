@@ -22,7 +22,9 @@ def get_top_stocks(stocks, prices):
 
     # Collect stock prices from each day
     for daily_prices in prices:
+        print("daily_prices: ", daily_prices)
         for stock, price in zip(stocks, daily_prices):
+            print("stock: ", stock, "price: ", price)
             stock_data[stock].append(price)
 
     # Compute average price for each stock
@@ -30,7 +32,8 @@ def get_top_stocks(stocks, prices):
     #print(avg_prices)
 
     # Sort stocks by decreasing average price and take the top three
-    #print((sorted(avg_prices.items(), reverse=True))[:3])
+    top_stocks_test = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)
+    print(top_stocks_test)
     top_stocks = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)[:3]
   
     return top_stocks
