@@ -1,3 +1,9 @@
+'''
+A decorator is a function that takes another function as an argument, extends its behavior,
+and returns the modified function. Decorators provide a way to add functionality to functions
+or methods without altering their original structure. 
+They are often used for tasks such as logging, access control, instrumentation, and validation.
+'''
 # 1st basic function decorator
 def my_decorator(func):
   def wrapper():
@@ -15,7 +21,7 @@ def say_hello():
 
 say_hello()
 
-# 2nd argumentis in function
+# 2nd argument is in function
 def repeat(n):
   def decorator(func):
     def wrapper(*args, **kwargs):

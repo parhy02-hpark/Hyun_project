@@ -1,3 +1,8 @@
+'''
+The any() function in Python is a built-in function that takes an iterable as an argument 
+and returns True if at least one element in the iterable is truthy. If the iterable is 
+empty or all elements are falsy, it returns False. 
+'''
 # example list of values
 values = [0, False, None, []]
 #values = [0, False, None, [], "Hello"]

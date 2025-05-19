@@ -1,3 +1,9 @@
+'''
+The zip() function in Python creates an iterator that aggregates elements from multiple 
+iterables (like lists, tuples, or strings). It returns an iterator of tuples, where 
+the i-th tuple contains the i-th element from each of the input iterables. 
+The iterator stops when the shortest input iterable is exhausted. 
+'''
 # two lists
 names = ["Alic", "Bob", "Charlie"]
 ages = [30, 25, 45]
