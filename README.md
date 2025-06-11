@@ -1,2 +1,3 @@
 # firstProjet
 first project for individual work
+python is most used...
