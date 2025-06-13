@@ -1,3 +1,5 @@
+# string manipulation: check if a string is a palindrome
+#1
 def isPalindrome_slicing(s):
   if type(s) != str:
     s = str(s)
@@ -9,6 +11,7 @@ if isPalindrome_slicing(s) == True:
 else:
   print(s + " is not a palindrome.")
 
+#2
 def isPalindrome_iterative(s):
   j = len(s)-1
   for i in range(j):

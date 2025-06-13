@@ -12,6 +12,6 @@ def filter_words(words, letters):
 
 #ex)
 words = ["apple", "banana", "lemon", "cherry", "grape", "tomato"]
-letters = "kio"
+letters = "lr"
 
 print(filter_words(words, letters))

@@ -19,21 +19,22 @@ from collections import defaultdict
 def get_top_stocks(stocks, prices):
     """return the three stocks with the highest average price."""
     stock_data = defaultdict(list)
+    print(stock_data)
 
     # Collect stock prices from each day
     for daily_prices in prices:
         print("daily_prices: ", daily_prices)
         for stock, price in zip(stocks, daily_prices):
-            print("stock: ", stock, "price: ", price)
+            print("stock: ", stock, " price: ", price)
             stock_data[stock].append(price)
-
+    print(stock_data)
     # Compute average price for each stock
     avg_prices = {stock: sum(prices) / len(prices) for stock, prices in stock_data.items()}
     #print(avg_prices)
 
     # Sort stocks by decreasing average price and take the top three
     top_stocks_test = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)
-    print(top_stocks_test)
+    print("top stock: ", top_stocks_test)
     top_stocks = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)[:3]
   
     return top_stocks
