@@ -16,6 +16,24 @@ def merge_sorted_lists(list1, list2):
 
   return sorted(merged_list)
 
-l1 = [1,3,5,7,9]
-l2 = [2,4,6,8,11,10,13]
-print(merge_sorted_lists(l1,l2))
+# remove duplicate numbers in the list
+def removeDuplicates(nums):
+  if not nums:
+    return 0
+  
+  # pointer for placing unique elements
+  k = 1
+  for i in range(1, len(nums)):
+    if nums[i] != nums[i-1]:
+      nums[k] = nums[i]
+      k += 1
+  return k
+
+
+l1 = [1,2,4]
+l2 = [1,3,4]
+mergelist = merge_sorted_lists(l1,l2)
+print(mergelist)
+k = removeDuplicates(mergelist)
+print(k)
+print(mergelist[:k])

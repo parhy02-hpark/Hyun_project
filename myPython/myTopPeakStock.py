@@ -34,7 +34,7 @@ def get_top_stocks(stocks, prices):
 
     # Sort stocks by decreasing average price and take the top three
     top_stocks_test = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)
-    print("top stock: ", top_stocks_test)
+    print("top stocks test: ", top_stocks_test)
     top_stocks = sorted(avg_prices.keys(), key=lambda stock: avg_prices[stock], reverse=True)[:3]
   
     return top_stocks
