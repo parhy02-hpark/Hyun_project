@@ -7,11 +7,11 @@ given set.
 def filter_words(words, letters):
   """Filter words to keep only those containing at least one letter from the given set."""
   letters_set = set(letters)
-  filtered_words = [word for word in words if any(char in letters_set for char in word)]
+  filtered_words = [word for word in words if any(char in letters for char in word)]
   return filtered_words
 
 #ex)
-words = ["apple", "banana", "lemon", "cherry", "grape", "tomato"]
-letters = "lr"
+words = ["apple", "banana", "lemon", "cherry", "grape", "tomato", "orange"]
+letters = "le"
 
 print(filter_words(words, letters))

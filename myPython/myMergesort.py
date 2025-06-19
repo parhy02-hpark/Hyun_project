@@ -23,6 +23,7 @@ def removeDuplicates(nums):
   
   # pointer for placing unique elements
   k = 1
+  nums = sorted(nums)
   for i in range(1, len(nums)):
     if nums[i] != nums[i-1]:
       nums[k] = nums[i]
