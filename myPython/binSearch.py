@@ -16,7 +16,7 @@ def bins(array, val, low, high):
 
 if __name__ == "__main__":
    a = [1,2,3,4,5,6,7,8,9,10]
-   v = 7
+   v = 1
    l = 0
    h = len(a)-1
    print(h)

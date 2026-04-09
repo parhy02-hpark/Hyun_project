@@ -4,7 +4,7 @@ def isPrime(n):
   if number == 0 or number == 1:
     return flag
   elif number == 2:
-    return True
+    flag = True
   elif number > 2:
     for i in range(2,number):
       if number % i == 0:
@@ -12,10 +12,10 @@ def isPrime(n):
         break
       else:
         flag = True
-    return flag
+  return flag
 
-num = input("enter the number: ")
-if isPrime(num) == True:
+#num = input("enter the number: ")
+if isPrime(9) == True:
   print("Yes, prime!")
 else:
   print("No")
